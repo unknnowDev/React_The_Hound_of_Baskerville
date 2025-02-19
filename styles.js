@@ -58,12 +58,26 @@ const styles = StyleSheet.create({
 const styles = StyleSheet.create({
   container: {
     padding: 20,
+    
   },
   title: {
     fontSize: 24,
     fontWeight: "bold",
     textAlign: "center",
     marginBottom: 10,
+  },
+  imageCoverWidth: {
+    width: "100%",
+    height: 625,
+    resizeMode: "contain",
+   
+
+  },
+  imageCover:{
+    width: "100%",
+    height: 'auto',
+    resizeMode: 'cover',
+
   },
   author: {
     fontSize: 18,
@@ -86,19 +100,18 @@ const styles = StyleSheet.create({
   chapterHeader: {
     fontSize: 20,
     fontWeight: "bold",
-    marginTop: 15,
+    marginTop: 115,
+    marginBottom: 25,
   },
   chapterContainer: {
-    marginTop: 10,
-    marginBottom: 10,
+    marginBottom: 25,
   },
   chapterImage: {
     width: "100%",
     height: 200,
     resizeMode: "cover",
-  
     marginTop: 25,
-    marginBottom: 25,
+
   },
   chapterTitle: {
     fontSize: 18,

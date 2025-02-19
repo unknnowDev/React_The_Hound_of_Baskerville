@@ -11,6 +11,12 @@ const BookComponent = ({ navigation }) => {
   return (
     <ScrollView style={styles.container}>
       <Text style={styles.title}>{bookData.title}</Text>
+
+      {bookData.image.map((chapter, index) => (
+        <View key={index} style={styles.imageCover}>
+         <Image source={chapter.imageCover} style={styles.imageCoverWidth} />
+        </View>
+      ))}
       <Text style={styles.author}>Author: {bookData.author}</Text>
       <Text style={styles.info}>Release Date: {bookData.release_date}</Text>
       <Text style={styles.info}>Last Update: {bookData.last_update}</Text>
@@ -32,6 +38,7 @@ const BookComponent = ({ navigation }) => {
 
 const ChapterScreen = ({ route }) => {
   const { chapter } = route.params;
+
   return (
     <ScrollView style={styles.container}>
       <Text style={styles.chapterTitle}>{chapter.title}</Text>

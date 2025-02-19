@@ -1,6 +1,10 @@
 
 const bookData = {
   title: "The Hound of the Baskervilles",
+  image: [
+    {
+       imageCover: require("./imgs/cover.jpg")
+    }], // Importando a imagem local
   author: "Arthur Conan Doyle",
   release_date: "October 1, 2001",
   last_update: "June 27, 2021",
