@@ -70,14 +70,11 @@ const styles = StyleSheet.create({
     width: "100%",
     height: 625,
     resizeMode: "contain",
-   
-
   },
   imageCover:{
     width: "100%",
     height: 'auto',
     resizeMode: 'cover',
-
   },
   author: {
     fontSize: 18,
